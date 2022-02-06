@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -116,17 +116,14 @@
         <div class="container">
             <h2 class="section-hero">Чем мы занимаемся</h2>
             <ul class="foto-item">
-            <li class="foto-list">
-                    
-    <div class="foto-wrap">
-        <img src="img/img.png" alt="работа на компьютери" width="370">
-         <p class="foto-text">
-            Десктопные приложения
-        </p>
-    </div>
-        </li>
+                <li>    
+                    <div class="foto-wrap">
+                        <img src="img/img.png" alt="работа на компьютери" width="370">
+                        <p class="foto-text">Десктопные приложения</p>
+                    </div>
+                </li>
 
-            <li class="foto-list">
+            <li>
     <div class="foto-wrap">
         <img src="img/box2.png" alt="телефон и компьютер" width="370">
         <p class="foto-text">
@@ -134,7 +131,7 @@
         </p>
     </div>
             </li>
-            <li class="foto-list">
+            <li>
         <div class="foto-wrap">
             <img src="img/box3.png" alt="планшет" width="370">
             <p class="foto-text">
@@ -450,23 +447,9 @@
         </button>
         </div>
         </div>
+        <script src="./js/modal.js"></script>
 
-        <script>
-            (() => {
-        const refs = {
-            openModalBtn: document.querySelector("[data-modal-open]"),
-            closeModalBtn: document.querySelector("[data-modal-close]"),
-            modal: document.querySelector("[data-modal]"),
-        };
-
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle("is-hidden");
-        }
-        })();
-        </script>
+        
 
 </body>
 </html>
