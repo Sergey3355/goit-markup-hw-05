@@ -482,7 +482,8 @@ margin-left: 50px;
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
 }
 
 .comand-socials-lcon{
@@ -551,7 +552,8 @@ margin-left: 50px;
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
 }
 
@@ -745,7 +747,9 @@ fill: currentColor;
     cursor: pointer;
     color: #212121;
     background: #F5F4FA;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .btn-list.secondary {
@@ -775,7 +779,7 @@ fill: currentColor;
     }
 
 .main-list-link{
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     
@@ -815,7 +819,7 @@ fill: currentColor;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     height: 100%;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
